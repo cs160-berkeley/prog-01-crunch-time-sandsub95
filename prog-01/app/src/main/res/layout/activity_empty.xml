@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Colors courtesy of MaterialPalette-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="cs160.test_converter.Empty">
+
+        <TextView
+            android:id="@string/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="210px"
+            android:paddingLeft="90px"
+            android:paddingRight="90px"
+            android:letterSpacing="0.75"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CS160"
+                android:textSize="54px"
+                android:paddingLeft="144px"
+                android:letterSpacing="0.05"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALorie"
+                android:textSize="54px"
+                android:paddingLeft="114px"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Converter"
+                android:textSize="54px"
+                android:paddingLeft="68px"
+                android:letterSpacing="0.05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="20px"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/calorie_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="4"
+                android:hint="0000"
+                android:textSize="168px"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="CALs" />
+
+            <EditText
+                android:id="@+id/weight_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="3"
+                android:hint="150"
+                android:textSize="168px"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="lbs" />
+
+        </LinearLayout>
+
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:columnCount="3"
+            android:rowCount="4"
+            >
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f44336">
+                <ImageView
+                    android:id="@+id/pushups_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pushups" />
+                <TextView
+                    android:text="Pushups"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/pushups_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="0000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reps"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#e91e63">
+                <ImageView
+                    android:id="@+id/situps_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/situps" />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Situps"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/situps_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="0000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reps"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#673ab7">
+                <ImageView
+                    android:id="@+id/squats_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/squats" />
+                <TextView
+                    android:gravity="center"
+                    android:text="Squats"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/squats_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="0000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reps"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#3f51b5">
+                <ImageView
+                    android:id="@+id/leglifts_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/leglifts" />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Leglifts"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/leglifts_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#03a9f4">
+                <ImageView
+                    android:id="@+id/planks_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/planks" />-->
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Planks"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/planks_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#009688">
+                <ImageView
+                    android:id="@+id/jumpingjacks_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jumpingjacks" />-->
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Jumping Jacks"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:paddingTop="23px"
+                    android:textSize="48px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/jumpingjacks_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#4caf50">
+                <ImageView
+                    android:id="@+id/pullups_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pullups" />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Pullups"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/pullups_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="0000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reps"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#cddc39">
+                <ImageView
+                    android:id="@+id/cycling_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cycling" />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Cycling"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/cycling_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffc107">
+                <ImageView
+                    android:id="@+id/walking_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/walking" />-->
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Walking"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/walking_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ff9800">
+                <ImageView
+                    android:id="@+id/jogging_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jogging" />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Jogging"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/jogging_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#795548">
+                <ImageView
+                    android:id="@+id/swimming_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/swimming" />-->
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Swimming"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="66px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/swimming_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#607d8b">
+                <ImageView
+                    android:id="@+id/stairclimbing_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/stairclimbing" />-->
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Stairclimbing"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="54px"
+                    android:paddingTop="15px"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/stairclimbing_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="000"
+                        android:textSize="66px"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
